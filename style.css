@@ -1,0 +1,287 @@
+*, html {
+    scroll-behavior: smooth !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar, #navbar *, #about *, #currentRole *, #experience *, #skills *, #hobbies * {
+    color: white;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    background-color: #31A4FA;
+    display: flex;
+    justify-content: space-between;
+    height: 7.5vh;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 40px;
+    font-size: min(5vh, 5vw);
+    cursor: pointer;
+}
+
+.nav-logo > a, .link-icons > a, .university-header > a, .nav-links > a, .nav-toggle-content > a {
+    text-decoration: none;
+}
+
+.about {
+    background-color: #2CBEF5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.about-content > p {
+    font-size: 1.2rem;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.link-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#currentRole, #education {
+    background-color: #f9fafc;
+}
+
+#currentRole *, #experience *, #skills *, .university-header > a {
+    color: #1c2d41;
+}
+
+.currentRole, .previousExperience, .education, .skills, .hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.currentRoleContent, .previousExperienceContent, .educationContent, .skillsContent, .hobbiesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.skillsContent > h1, .hobbiesContent > h1 {
+    text-align: center;
+}
+
+.hobbiesContent > p {
+    text-align: center; 
+    font-size: 100%;
+}
+
+.currentRoleDescription, .previousExperienceItem {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.currentRoleDescription > h3, .currentRoleDescription > h3 > a > svg,
+.previousExperienceItem > h3, .previousExperienceItem > h3 > a > svg,
+.previousExperienceItem > h3 > a > img {
+    vertical-align: middle; display: inline-block;
+}
+
+.currentRoleDescription > h4 > ul, .previousExperienceItem > h4 > ul {
+    margin-left: 50px;
+}
+
+.timeframe {
+    color: #2CBEF5 !important;
+}
+
+.textDescription {
+    color: rgb(129, 133, 137) !important;
+}
+
+.university-info {
+    width: 85%;
+    border: 5px solid #1c2d41;
+    border-radius: 10px;
+    border-left-color: #2CBEF5;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.university-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.relevantCourses {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 14px;
+    overflow: scroll;
+    grid-gap: 3px;
+    background-color: #1c2d41;
+}
+
+.relevantCourses * {
+    color: rgb(129, 133, 137);
+}
+
+.coursesCell {
+    background-color: #f9fafc;
+    text-align: center;
+}
+
+.languages {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    text-align: center;
+    background-color: #1c2d41;
+    overflow: scroll;
+}
+
+.languages > h4 {
+    text-align: center;
+    background-color: white;
+}
+
+.skills {
+    position: relative; 
+}
+
+.skillImages {
+    position: absolute;
+}
+
+#hobbies {
+    background-color: #2CBEF5;
+    margin-top: 70px;
+}
+
+.pictures {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr;
+    gap: 15px;
+}
+
+.picture-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    font-size: 85%;
+}
+
+.cell > p {
+    text-align: center;
+}
+
+.resume-btn {
+    background-color: #2CBEF5;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    border-color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .cell > p {
+        display: none;
+    }   
+}
+
+@media only screen and (min-width: 1201px) {
+    .nav-links {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-toggle-content {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+    }
+
+    .nav-toggle-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #31A4FA;
+    }
+
+    .nav-toggle-content > a {
+        background-color: #31A4FA;
+    }
+}
