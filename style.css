@@ -90,6 +90,10 @@
     padding: 50px;
 }
 
+.hobbies {
+    padding-bottom: 0;
+}
+
 .currentRoleContent, .previousExperienceContent, .educationContent, .skillsContent, .hobbiesContent {
     display: flex;
     justify-content: center;
